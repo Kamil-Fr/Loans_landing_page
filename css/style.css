@@ -82,7 +82,7 @@ body {
 .info__icons {
     display: flex;
     margin-top: 60px;
-}
+   }
 
 .info__icons .icons__item {
     display: flex;
@@ -97,15 +97,16 @@ body {
 
 .info__icons .icons__item::before {
     margin-bottom: 10px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     font-family: "Font Awesome 5 Free";
     color: var(--second-color);
+
 }
 
 .info__icons .icons__item:nth-child(1)::before {
     content: "\f0c2";
-}
+    }
 
 .info__icons .icons__item:nth-child(2)::before {
     content: "\f3d1";
