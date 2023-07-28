@@ -1,0 +1,173 @@
+:root {
+    --main-color: rgb(1, 36, 186);
+    --second-color: rgba(219, 125, 245, 96);
+    --third-color: rgba(106, 151, 255, 100);
+    --text-color: rgb(53, 53, 53);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.header__nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav__item a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.nav__item:last-child a {
+    padding-right: 0;
+}
+
+.main {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+}
+
+.main__intro {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro__info .info__heading-small {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--second-color);
+}
+
+.intro__info .info__heading {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1em;
+    color: var(--main-color);
+}
+
+.info__icons {
+    display: flex;
+    margin-top: 60px;
+}
+
+.info__icons .icons__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    width: 150px;
+}
+
+.info__icons .icons__item:first-child {
+    margin-left: 0;
+}
+
+.info__icons .icons__item::before {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Font Awesome 5 Free";
+    color: var(--second-color);
+}
+
+.info__icons .icons__item:nth-child(1)::before {
+    content: "\f0c2";
+}
+
+.info__icons .icons__item:nth-child(2)::before {
+    content: "\f3d1";
+}
+
+.info__icons .icons__item:nth-child(3)::before {
+    content: "\f2f2";
+}
+
+.info__icons .icons__item .item__text {
+    font-weight: 600;
+}
+
+.intro__form {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .13);
+    border-radius: 8px;
+}
+
+.form__heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--third-color);
+}
+
+.intro__form form {
+    margin-top: 30px;
+}
+
+.intro__form .form__box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.intro__form .form__box label {
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.intro__form .form__box .form__input {
+    font-size: 1rem;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.intro__form .form__box .form__input::placeholder {
+    opacity: .4;
+}
+
+.intro__form .form__button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 20px 30px;
+    background-color: var(--third-color);
+    border: none;
+    border-radius: 8px;
+    box-shadow: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
